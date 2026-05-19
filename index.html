@@ -865,6 +865,32 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
  .v28-file-shot{height:310px;padding:10px;}
 }
 
+
+/* v47 政風破敗專欄 */
+.ethics-collapse{position:relative;}
+.ethics-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(360px,.58fr);gap:1rem;align-items:start;margin-top:2rem;}
+.ethics-waterfall{border:1px solid var(--rule);background:rgba(255,255,255,.025);box-shadow:var(--shadow);}
+.ethics-step{display:grid;grid-template-columns:92px 1fr;gap:1.15rem;padding:1.25rem 1.35rem;border-bottom:1px solid var(--rule);position:relative;}
+.ethics-step:last-child{border-bottom:0;}
+.ethics-date{font-family:var(--mono);font-size:.72rem;letter-spacing:.18em;color:var(--green);font-weight:900;text-transform:uppercase;line-height:1.6;}
+.ethics-step h3{margin:0 0 .45rem;font-size:1.08rem;line-height:1.35;color:#fff;}
+.ethics-step p{margin:0;color:var(--ink-soft);line-height:1.9;font-size:.95rem;}
+.ethics-step.hot{background:linear-gradient(90deg,rgba(255,45,120,.09),rgba(255,45,120,0));}
+.ethics-step.hot .ethics-date,.ethics-step.hot h3{color:var(--pink);}
+.ethics-proof-card{border:1px solid rgba(255,45,120,.35);background:linear-gradient(135deg,rgba(255,45,120,.08),rgba(0,180,255,.025));box-shadow:var(--shadow);position:sticky;top:calc(var(--nav-h) + 1rem);}
+.ethics-proof-head{padding:1rem 1.05rem;border-bottom:1px solid var(--rule);}
+.ethics-proof-head .tag{font-family:var(--mono);font-size:.62rem;letter-spacing:.18em;color:var(--pink);font-weight:900;text-transform:uppercase;margin-bottom:.45rem;}
+.ethics-proof-head h3{margin:0 0 .35rem;font-size:1.2rem;color:#fff;line-height:1.35;}
+.ethics-proof-head p{margin:0;color:var(--ink-soft);font-size:.9rem;line-height:1.75;}
+.ethics-shot{background:rgba(0,0,0,.28);border-bottom:1px solid var(--rule);min-height:220px;display:grid;place-items:center;overflow:hidden;}
+.ethics-shot img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;cursor:zoom-in;}
+.ethics-links{padding:1rem 1.05rem;display:grid;gap:.7rem;}
+.ethics-links a{color:var(--blue);text-decoration:none;border:1px solid rgba(0,180,255,.28);padding:.72rem .82rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;}
+.ethics-links a:hover{border-color:var(--green);color:var(--green);}
+.ethics-verdict{margin-top:1rem;border:1px solid rgba(255,45,120,.38);background:rgba(255,45,120,.055);padding:1.25rem 1.35rem;color:var(--ink-soft);line-height:1.95;}
+.ethics-verdict strong{color:var(--pink);}
+@media(max-width:980px){.ethics-grid{grid-template-columns:1fr}.ethics-proof-card{position:relative;top:auto}.ethics-step{grid-template-columns:1fr;gap:.45rem}.ethics-date{font-size:.68rem}}
+
 /* v37 inline image lightbox */
 .lightbox-overlay{
  position:fixed;
@@ -975,7 +1001,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
   <ul class="nav-links">
    <li><a href="#summary">Overview</a>
    <a href="#quick-read">30 Sec</a></li><li><a href="#armor">Armor</a></li><li><a href="#routes">Routes</a></li><li><a href="#loop">Loop</a></li><li><a href="#timeline">Timeline</a></li><li><a href="#ask-answer">Q/A Gap</a></li><li><a href="#case-index">Index</a></li><li><a href="#lie-proof">Proof</a>
-   <a href="#document-proof">Files</a></li><li><a href="#budget-hole">Budget</a></li><li><a href="#quote-wall">Quotes</a></li><li><a href="#audit-trap">Control Yuan</a></li><li><a href="#173">173</a></li><li><a href="#foia-principle">FOIA</a></li><li><a href="#court">Court</a></li><li><a href="#auditor-kit">Audit Kit</a></li>
+   <a href="#document-proof">Files</a></li><li><a href="#budget-hole">Budget</a></li><li><a href="#quote-wall">Quotes</a></li><li><a href="#ethics-collapse">Ethics</a></li><li><a href="#audit-trap">Control Yuan</a></li><li><a href="#173">173</a></li><li><a href="#foia-principle">FOIA</a></li><li><a href="#court">Court</a></li><li><a href="#auditor-kit">Audit Kit</a></li>
   </ul>
  </nav>
 
@@ -987,7 +1013,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
     <h1 class="glitch-title" data-text="屏東黑箱 行政解剖">屏東黑箱 <em>全紀錄</em></h1>
     <p class="hero-desc">從一張分數表，到前瞻補助、營運採購、政資法第9條被173關門；這是一條地方政府如何把公共資源包進行政黑箱的因果時間線。</p>
     <div class="hero-statement">核心指控很直白：政府拿著前瞻預算，嘴上喊公平招募，實際用行政裁量權劃設特權租界。職人町案只是入口，真正被打開的是屏東縣府用來規避公眾監督與政資法檢驗的黑箱 SOP。</div>
-    <div class="hero-meta"><span>Prepared by Wesley</span><span>4force lab｜萬合天宜有限公司</span><span>Public Procedure Red Team</span><span class="date-chip">Created 2026.05.15</span><span class="date-chip update-chip">Updated 2026.05.16</span></div>
+    <div class="hero-meta"><span>Prepared by Wesley</span><span>4force lab｜萬合天宜有限公司</span><span>Public Procedure Red Team</span><span class="date-chip">Created 2026.05.15</span><span class="date-chip update-chip">Updated 2026.05.19</span></div>
     <div class="hero-actions"><a class="btn primary" href="#summary">Start Diagnosis</a></div>
    </div>
    <div class="hero-panel-stack fade-up">
@@ -1295,8 +1321,61 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
    </div>
   </section>
 
+  <section id="ethics-collapse" class="ethics-collapse">
+   <div class="section-label">Layer 03H｜Integrity Collapse｜政風破敗專欄</div>
+   <div class="section-heading"><h2>屏東縣政府政風處，徹底敗壞。</h2><p>廉政防線的崩壞，不在於沒有回覆；在於每一次回覆都把問題推回黑箱。</p></div>
+   <div class="ethics-grid">
+    <div>
+     <div class="ethics-waterfall">
+      <div class="ethics-step">
+       <div class="ethics-date">115/03/24</div>
+       <div><h3>接獲具體檢舉</h3><p>民眾單向提供職人町招募黑箱、法規錯置、評分資料延宕與官網檔案矛盾線索。政風處此時掌握的，不是情緒陳情，而是一包可以立即查核的行政線索。</p></div>
+      </div>
+      <div class="ethics-step hot">
+       <div class="ethics-date">115/03/26</div>
+       <div><h3>率先替黑箱建立法理出口</h3><p>政風處未先公開調閱原始評分表、外聘委員簽到、車馬費、伺服器log等查核軌跡，卻先援引政府資訊公開法第18條第1項第3款，主動替勞青處解釋評分資料可不提供。政風單位率先定義黑箱。</p></div>
+      </div>
+      <div class="ethics-step">
+       <div class="ethics-date">115/03/27</div>
+       <div><h3>勞青處隨後跟進相同口徑</h3><p>隔日早上，勞青處以相同方向回覆評分資料不開。政風處前一日建立的18-1-3說法，隔日成為被檢舉機關的防禦語言。</p></div>
+      </div>
+      <div class="ethics-step hot">
+       <div class="ethics-date">115/03/30</div>
+       <div><h3>最高行政法院判決被拿來壓人，18-2 分離公開被刻意略過</h3><p>政風處引用最高行政法院106年度判字第308號判決，試圖強化「評分資料可不公開」的說法；但該判決脈絡明顯來自採購案爭議，且更凸顯政府資訊公開法第18條第2項的分離公開原則。政風處引用這麼大的判決，卻堅持看不見18-2，主觀惡意已經明確。請自己向最高主管機關廉政署解釋；亦或是廉政署也是你們的人，民眾等著看。</p></div>
+      </div>
+      <div class="ethics-step hot">
+       <div class="ethics-date">115/03/30</div>
+       <div><h3>六年檔案，敏感時間點異常消失</h3><p>一筆上架於109年、潘孟安縣長時代的職人町相關檔案，在檢舉後敏感時間點異常下架或跳轉。六年不維修，被檢舉後剛好整理？誰刪除？誰下指令？有沒有後台帳號、操作IP、伺服器log？</p></div>
+      </div>
+      <div class="ethics-step">
+       <div class="ethics-date">115/05/18</div>
+       <div><h3>面對所有質疑，仍選擇裝聾作啞</h3><p>問題已經從一張分數表，擴大到政資法、前瞻預算、場域管理、委外邊界、官網異動與廉政查核責任。政風處仍未拿出足以支撐「查無不法」的原始調閱軌跡。</p></div>
+      </div>
+      <div class="ethics-step hot">
+       <div class="ethics-date">115/05/19</div>
+       <div><h3>蓋牌回覆，荒唐收束</h3><p>具體問題被重新包裝成行政話術。人民問證據，它回姿態；人民問調查，它回權責；人民問公開，它回救濟。這就是屏東縣政府政風處給人民看的廉政現場。</p></div>
+      </div>
+     </div>
+     <div class="ethics-verdict"><strong>最嚴厲的人民指控：</strong>政風處接獲具體檢舉後，沒有展現廉政單位應有的證據保全與查核力，反而率先為被檢舉機關建立資料不公開的法理出口。若伺服器log、評分原件、外聘委員紀錄、車馬費與簽核軌跡都沒有調閱，「查無不法」四個字就是屏東縣政府政風敗壞的自白。</div>
+     <div class="ethics-verdict"><strong>173 條蓋牌的白紙黑字：</strong>行政程序法第173條第2款的發動要件是「同一事由，經予適當處理，並已明確答覆」。這整封信件等於屏東縣政府政風處白紙黑字承認：「對，我們沒有調閱 log，沒有查核委員簽到，我們就是在用政風的名義幫被檢舉機關做法律防禦，而且我們認為這樣處理很適當，不想再解釋了。」</div>
+    </div>
+    <aside class="ethics-proof-card">
+     <div class="ethics-proof-head">
+      <div class="tag">B11501468｜政風來往信箱</div>
+      <h3>來信截圖：政風處說了什麼</h3>
+      <p>點擊圖片放大。這張截圖作為公開索引，後續可補上完整信件往來與回覆。</p>
+     </div>
+     <div class="ethics-shot"><a href="ethics_mail_b11501468_1150519.png"><img src="ethics_mail_b11501468_1150519.png" alt="屏東縣政府政風處 B11501468 往來信箱與回覆截圖"></a></div>
+     <div class="ethics-links">
+      <a href="ethics_mail_b11501468_1150519.png">Open Screenshot</a>
+      <a href="https://youtu.be/B6Bf4E9pAu4" target="_blank" rel="noopener">YouTube 固化證據</a>
+     </div>
+    </aside>
+   </div>
+  </section>
+
   <section id="security-event">
-   <div class="section-label">Layer 03H｜Public Safety Event</div>
+   <div class="section-label">Layer 03I｜Public Safety Event</div>
    <div class="section-heading"><h2>官方活動現場的人身警報。</h2><p>行政爭議走到縣府主管場域的秩序失控，案件性質已經升級。報案紀錄、現場影像、來賓區域與設備設定畫面，全部進入證據鏈。</p></div>
    <div class="security-map">
     <div class="police-card">
@@ -1319,7 +1398,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
   </section>
 
   <section id="audit-trap">
-   <div class="section-label">Layer 03I｜Control Yuan Loop</div>
+   <div class="section-label">Layer 03J｜Control Yuan Loop</div>
    <div class="section-heading"><h2>監察院妥處：把縣府推進自己的公文陷阱。</h2><p>監察院沒有直接替申請人打開資料，但它逼縣府用正式公文留下說法。這些說法將成為國賠與司法程序裡可檢驗的材料。</p></div>
    <div class="compare-grid">
     <div class="compare-card strong"><div class="compare-kicker">A Case｜進駐評選</div><h3>分數、委員、評語</h3><ul><li>申請人要求自身評分明細。</li><li>縣府稱依公告與既定程序辦理。</li><li>縣府稱有外聘委員參與。</li><li>待驗文件：簽到表、車馬費、個別評分表。</li></ul></div>
@@ -1330,7 +1409,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
   </section>
 
   <section id="pathology">
-   <div class="section-label">Layer 03J｜Administrative Pathology</div>
+   <div class="section-label">Layer 03K｜Administrative Pathology</div>
    <div class="section-heading"><h2>病理總結：行政閉環如何生成。</h2><p>本頁不需要證明所有人主觀惡意。只要證明每個節點都沒有實質打開資料，閉環就成立。</p></div>
    <div class="mini-grid">
     <div class="mini-card alert"><h4>01｜標準浮動</h4><p>對進駐申請人使用抽象評估語言；對營運管理與空間使用，卻以另一套審查強度處理。標準如何切換、誰取得空間、誰負責監督，縣府應提出理由。</p></div>
@@ -1522,7 +1601,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
   document.documentElement.style.overflow='';
   lightboxImg.src='';
  }
- document.querySelectorAll('.v28-file-shot img,.seal-shot img').forEach(img=>{
+ document.querySelectorAll('.v28-file-shot img,.seal-shot img,.ethics-shot img').forEach(img=>{
   const a=img.closest('a');
   if(a){a.removeAttribute('target');a.removeAttribute('rel');a.addEventListener('click',e=>{e.preventDefault();openLightbox(img);});}
   else img.addEventListener('click',()=>openLightbox(img));
