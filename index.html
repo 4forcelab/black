@@ -883,7 +883,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
 .ethics-proof-head h3{margin:0 0 .35rem;font-size:1.2rem;color:#fff;line-height:1.35;}
 .ethics-proof-head p{margin:0;color:var(--ink-soft);font-size:.9rem;line-height:1.75;}
 .ethics-shot{background:rgba(0,0,0,.28);border-bottom:1px solid var(--rule);min-height:220px;display:grid;place-items:center;overflow:hidden;}
-.ethics-shot img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;cursor:zoom-in;}
+.ethics-shot img{display:block;width:100%;height:auto;max-height:560px;object-fit:contain;cursor:default;}
 .ethics-links{padding:1rem 1.05rem;display:grid;gap:.7rem;}
 .ethics-links a{color:var(--blue);text-decoration:none;border:1px solid rgba(0,180,255,.28);padding:.72rem .82rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;}
 .ethics-links a:hover{border-color:var(--green);color:var(--green);}
@@ -949,7 +949,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
  font-size:12px;
  letter-spacing:.03em;
 }
-.v28-file-shot img,.seal-shot img{cursor:zoom-in;}
+.v28-file-shot img,.seal-shot img{cursor:default;}
 @media(max-width:720px){.lightbox-overlay{padding:10px}.lightbox-frame img{max-width:98vw;max-height:88vh}.lightbox-caption{font-size:11px}}
 
 </style>
@@ -1363,11 +1363,11 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
      <div class="ethics-proof-head">
       <div class="tag">B11501468｜政風來往信箱</div>
       <h3>來信截圖：政風處說了什麼</h3>
-      <p>點擊圖片放大。這張截圖作為公開索引，後續可補上完整信件往來與回覆。</p>
+      <p>截圖作為公開索引。完整信件往來改以 PDF 開新視窗檢視，避免截圖尺寸不完整。</p>
      </div>
-     <div class="ethics-shot"><a href="ethics_mail_b11501468_1150519.png"><img src="ethics_mail_b11501468_1150519.png" alt="屏東縣政府政風處 B11501468 往來信箱與回覆截圖"></a></div>
+     <div class="ethics-shot"><img src="ethics_mail_b11501468_1150519.png" alt="屏東縣政府政風處 B11501468 往來信箱與回覆截圖"></div>
      <div class="ethics-links">
-      <a href="ethics_mail_b11501468_1150519.png">Open Screenshot</a>
+      <a href="ethics_b11501468_correspondence.pdf" target="_blank" rel="noopener">Open PDF</a>
       <a href="https://youtu.be/B6Bf4E9pAu4" target="_blank" rel="noopener">YouTube 固化證據</a>
      </div>
     </aside>
@@ -1601,7 +1601,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
   document.documentElement.style.overflow='';
   lightboxImg.src='';
  }
- document.querySelectorAll('.v28-file-shot img,.seal-shot img,.ethics-shot img').forEach(img=>{
+ document.querySelectorAll('.v28-file-shot img,.seal-shot img').forEach(img=>{
   const a=img.closest('a');
   if(a){a.removeAttribute('target');a.removeAttribute('rel');a.addEventListener('click',e=>{e.preventDefault();openLightbox(img);});}
   else img.addEventListener('click',()=>openLightbox(img));
