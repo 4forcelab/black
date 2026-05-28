@@ -1162,6 +1162,40 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
   .aai-head-stat{min-height:92px;padding:15px;}
 }
 
+
+/* AAI head CTA refinement: only the button is clickable, not the entire hero area */
+.aai-hero-gate{cursor:default;}
+.aai-open-button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:fit-content;
+  margin-top:1.15rem;
+  padding:.88rem 1.12rem;
+  border:1px solid rgba(0,255,159,.42);
+  background:linear-gradient(90deg,rgba(0,255,159,.14),rgba(0,180,255,.08));
+  color:#fff;
+  text-decoration:none;
+  font-weight:900;
+  font-size:.86rem;
+  letter-spacing:.08em;
+  box-shadow:0 0 28px rgba(0,255,159,.10), inset 0 0 0 1px rgba(255,255,255,.035);
+  transition:transform .2s ease,border-color .2s ease,background .2s ease;
+}
+.aai-open-button:hover{
+  transform:translateY(-2px);
+  border-color:rgba(255,45,120,.62);
+  background:linear-gradient(90deg,rgba(255,45,120,.16),rgba(0,255,159,.10));
+}
+.aai-open-button::after{content:'→';margin-left:.65rem;color:var(--green);}
+.aai-device-note{
+  margin:.72rem 0 0!important;
+  color:rgba(240,237,232,.58)!important;
+  font-size:.78rem!important;
+  line-height:1.65!important;
+}
+.aai-portal-note{color:rgba(240,237,232,.58)!important;}
+
 </style>
 
  <script type="application/ld+json">
@@ -1203,7 +1237,7 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
 
  <canvas id="fx-canvas"></canvas><div class="scanlines"></div><div class="noise"></div>
 
- <a class="aai-hero-gate" href="https://aai-display.vercel.app/" target="_blank" rel="noopener" aria-label="Open 4Force Active Audit Intelligence">
+ <section class="aai-hero-gate" aria-label="4Force Active Audit Intelligence hero head">
   <div class="aai-head-grid">
    <div class="aai-head-copy">
     <div class="aai-head-kicker">AAI V8 Alpha / Public Projection Console <span>Open AAI Surface</span></div>
@@ -1224,17 +1258,18 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
      <span class="tag">Source & Model</span>
      <h2>4Force Active Audit Intelligence</h2>
      <p>由萬合天宜有限公司 4Force Lab 團隊開發。前台展示 public projection；指定路徑由顧問服務解鎖。</p>
-     <span class="aai-open-pill">Open Surface</span>
+     <a class="aai-open-button" href="https://aai-display.vercel.app/" target="_blank" rel="noopener">小人才黑箱，看看開源之光</a>
+     <p class="aai-device-note">備註：電腦版限定，手機使用者請勿點擊。</p>
     </div>
     <div class="aai-side-card hot">
      <span class="tag">Arrangement Against Absurdity</span>
      <h3>荒謬可以存在，但不能阻止路徑被看見。</h3>
      <p>AAI 給願意看見的人，一套看見路徑的方法。公平、公評、公民。</p>
-     <p class="aai-portal-note">Click anywhere in this head to enter AAI.</p>
+     <p class="aai-portal-note">入口已收斂為上方按鈕，原始內容可直接往下閱讀。</p>
     </div>
    </div>
   </div>
- </a>
+ </section>
 
 
  <nav>
