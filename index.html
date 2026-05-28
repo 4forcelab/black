@@ -952,6 +952,216 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
 .v28-file-shot img,.seal-shot img{cursor:default;}
 @media(max-width:720px){.lightbox-overlay{padding:10px}.lightbox-frame img{max-width:98vw;max-height:88vh}.lightbox-caption{font-size:11px}}
 
+
+/* AAI hero gate: full product surface head, original page pushed below */
+.aai-hero-gate{
+  position:relative;
+  z-index:3;
+  min-height:92vh;
+  display:block;
+  color:var(--ink);
+  text-decoration:none;
+  padding:clamp(34px,5vh,70px) clamp(22px,6vw,92px);
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 12% 15%,rgba(0,255,159,.16),transparent 28%),
+    radial-gradient(circle at 86% 22%,rgba(255,45,120,.17),transparent 31%),
+    radial-gradient(circle at 52% 82%,rgba(0,180,255,.13),transparent 34%),
+    linear-gradient(120deg,rgba(4,10,14,.98),rgba(9,9,15,.98) 56%,rgba(16,4,17,.98));
+  border-bottom:1px solid rgba(0,255,159,.24);
+  box-shadow:0 36px 120px rgba(0,0,0,.52), inset 0 -1px 0 rgba(255,45,120,.22);
+}
+.aai-hero-gate::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:
+    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.032) 1px,transparent 1px);
+  background-size:32px 32px;
+  mask-image:linear-gradient(180deg,rgba(0,0,0,.9),rgba(0,0,0,.25));
+  opacity:.75;
+}
+.aai-hero-gate::after{
+  content:'PUBLIC PROJECTION CONSOLE';
+  position:absolute;
+  right:clamp(24px,5vw,86px);
+  bottom:clamp(18px,4vh,46px);
+  font-family:var(--mono);
+  font-size:clamp(30px,7vw,110px);
+  font-weight:900;
+  line-height:.9;
+  letter-spacing:.05em;
+  color:rgba(255,255,255,.028);
+  pointer-events:none;
+  white-space:nowrap;
+}
+.aai-head-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:minmax(0,1.18fr) minmax(340px,.82fr);
+  gap:clamp(28px,5vw,76px);
+  align-items:center;
+  max-width:1680px;
+  min-height:calc(92vh - clamp(68px,10vh,140px));
+  margin:0 auto;
+}
+.aai-head-kicker{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:12px;
+  margin-bottom:clamp(18px,3vh,32px);
+  font-family:var(--mono);
+  font-size:clamp(11px,.82vw,14px);
+  font-weight:900;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--blue);
+}
+.aai-head-kicker span{
+  border:1px solid rgba(0,180,255,.34);
+  padding:.38rem .58rem;
+  color:#d9fbff;
+  background:rgba(0,180,255,.045);
+}
+.aai-head-title{
+  margin:0;
+  max-width:12ch;
+  font-size:clamp(58px,8.5vw,142px);
+  line-height:.92;
+  letter-spacing:-.075em;
+  font-weight:900;
+  color:#effaff;
+  text-shadow:0 0 28px rgba(0,180,255,.18),0 0 58px rgba(0,255,159,.09);
+}
+.aai-head-title strong{display:block;color:#effaff;font-weight:900;}
+.aai-head-motto{
+  margin:clamp(20px,3vh,34px) 0 0;
+  display:grid;
+  gap:12px;
+}
+.aai-head-motto .darkpool{
+  font-family:var(--mono);
+  color:var(--pink);
+  font-size:clamp(13px,1vw,18px);
+  font-weight:900;
+  letter-spacing:.09em;
+  text-transform:uppercase;
+}
+.aai-head-motto .arranged{
+  color:#effaff;
+  font-size:clamp(23px,2.1vw,39px);
+  line-height:1.25;
+  font-weight:650;
+  letter-spacing:-.03em;
+}
+.aai-head-stats{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:12px;
+  margin-top:clamp(26px,4vh,44px);
+  max-width:900px;
+}
+.aai-head-stat{
+  min-height:106px;
+  border:1px solid rgba(255,255,255,.11);
+  background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(0,0,0,.18));
+  padding:18px 18px 16px;
+  box-shadow:inset 0 0 0 1px rgba(0,255,159,.03);
+}
+.aai-head-stat b{
+  display:block;
+  color:var(--blue);
+  font-size:clamp(26px,2.4vw,46px);
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-.04em;
+}
+.aai-head-stat span{
+  display:block;
+  margin-top:9px;
+  color:rgba(240,237,232,.78);
+  font-size:13px;
+  font-weight:800;
+  line-height:1.35;
+}
+.aai-head-stat small{
+  display:block;
+  color:rgba(240,237,232,.46);
+  font-size:11px;
+  line-height:1.4;
+  margin-top:2px;
+}
+.aai-head-side{
+  display:grid;
+  gap:16px;
+  align-self:center;
+}
+.aai-side-card{
+  border:1px solid rgba(255,255,255,.12);
+  background:linear-gradient(135deg,rgba(255,255,255,.055),rgba(0,0,0,.28));
+  box-shadow:0 26px 76px rgba(0,0,0,.28), inset 0 0 0 1px rgba(0,255,159,.035);
+  padding:clamp(20px,2.1vw,32px);
+}
+.aai-side-card.hot{border-color:rgba(255,45,120,.43);background:linear-gradient(135deg,rgba(255,45,120,.105),rgba(0,0,0,.3));}
+.aai-side-card h2,.aai-side-card h3{margin:0 0 13px;font-size:clamp(20px,1.55vw,30px);line-height:1.2;color:#fff;}
+.aai-side-card .tag{
+  display:block;
+  margin-bottom:10px;
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--pink);
+  font-weight:900;
+}
+.aai-side-card p{margin:0;color:rgba(240,237,232,.82);font-size:clamp(14px,.95vw,17px);line-height:1.78;}
+.aai-open-pill{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-top:18px;
+  color:#03130d;
+  background:var(--green);
+  border:1px solid rgba(0,255,159,.5);
+  padding:.78rem 1rem;
+  font-family:var(--mono);
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  box-shadow:0 12px 34px rgba(0,255,159,.14);
+}
+.aai-open-pill::after{content:'↗';font-size:15px;}
+.aai-portal-note{
+  margin-top:12px;
+  font-family:var(--mono);
+  font-size:11px!important;
+  letter-spacing:.12em;
+  color:rgba(240,237,232,.48)!important;
+  text-transform:uppercase;
+}
+.aai-hero-gate ~ nav{
+  position:sticky!important;
+  top:0!important;
+}
+@media(max-width:1080px){
+  .aai-head-grid{grid-template-columns:1fr;align-items:start;}
+  .aai-head-side{grid-template-columns:1fr 1fr;}
+  .aai-head-title{max-width:14ch;}
+}
+@media(max-width:760px){
+  .aai-hero-gate{min-height:auto;padding:76px 20px 42px;}
+  .aai-head-grid{min-height:auto;}
+  .aai-head-title{font-size:clamp(44px,15vw,72px);max-width:12ch;}
+  .aai-head-stats{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .aai-head-side{grid-template-columns:1fr;}
+  .aai-head-stat{min-height:92px;padding:15px;}
+}
+
 </style>
 
  <script type="application/ld+json">
@@ -992,6 +1202,40 @@ table.case-matrix{width:100%;border-collapse:collapse;min-width:1180px;font-size
       data-line="一張分數表，為什麼需要走到法院？"></div>
 
  <canvas id="fx-canvas"></canvas><div class="scanlines"></div><div class="noise"></div>
+
+ <a class="aai-hero-gate" href="https://aai-display.vercel.app/" target="_blank" rel="noopener" aria-label="Open 4Force Active Audit Intelligence">
+  <div class="aai-head-grid">
+   <div class="aai-head-copy">
+    <div class="aai-head-kicker">AAI V8 Alpha / Public Projection Console <span>Open AAI Surface</span></div>
+    <h1 class="aai-head-title"><strong>4Force Active Audit</strong><strong>Intelligence</strong></h1>
+    <div class="aai-head-motto">
+     <div class="darkpool">CAIRN IN THE DARKPOOL</div>
+     <div class="arranged">What's already there, arranged.</div>
+    </div>
+    <div class="aai-head-stats" aria-label="AAI display status cards">
+     <div class="aai-head-stat"><b>V8</b><span>Alpha Console</span><small>Public Projection</small></div>
+     <div class="aai-head-stat"><b>4</b><span>Display Routes</span><small>public samples</small></div>
+     <div class="aai-head-stat"><b>Active</b><span>Daily Miner</span><small>B displays projection</small></div>
+     <div class="aai-head-stat"><b>Only</b><span>Projection Surface</span><small>Core not exposed</small></div>
+    </div>
+   </div>
+   <div class="aai-head-side">
+    <div class="aai-side-card">
+     <span class="tag">Source & Model</span>
+     <h2>4Force Active Audit Intelligence</h2>
+     <p>由萬合天宜有限公司 4Force Lab 團隊開發。前台展示 public projection；指定路徑由顧問服務解鎖。</p>
+     <span class="aai-open-pill">Open Surface</span>
+    </div>
+    <div class="aai-side-card hot">
+     <span class="tag">Arrangement Against Absurdity</span>
+     <h3>荒謬可以存在，但不能阻止路徑被看見。</h3>
+     <p>AAI 給願意看見的人，一套看見路徑的方法。公平、公評、公民。</p>
+     <p class="aai-portal-note">Click anywhere in this head to enter AAI.</p>
+    </div>
+   </div>
+  </div>
+ </a>
+
 
  <nav>
   <a class="nav-brand" href="https://www.4force.com.tw" target="_blank" rel="noopener">
